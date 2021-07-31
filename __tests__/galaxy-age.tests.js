@@ -15,5 +15,10 @@ describe ('galacticAge', () => {
       let venusAge = earthAge.venusAge(36);
       expect (venusAge).toEqual(22.32)
     });
+    test('should convert earthAge to Mars years', () => {
+      let earthAge = new galacticAge();
+      let marsAge = earthAge * 1.88;
+      expect (marsAge).toEqual(earthAge * 1.88);
+    });
 });
 
