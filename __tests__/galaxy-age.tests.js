@@ -1,7 +1,7 @@
 import galacticAge from '../src/js/galaxy-age';
 
 describe ('galacticAge', () => {
-    test('should create an age object', () => {
+    test('should create an age property in galacticAge constructor object', () => {
       let earthAge = new galacticAge(36);
       expect (earthAge).toEqual({"earthAge": 36});
     });
@@ -25,5 +25,9 @@ describe ('galacticAge', () => {
       let jupiterAge = earthAge.jupiterAge(36);
       expect (jupiterAge).toEqual(3.04);
     });
+    test ('should add life expectancy property into galacticAge constructor object', () => {
+      let earthAge = new galacticAge(36, 77.79);
+      expect (earthAge).toEqual({"earthAge": 36, "lifeExpectancy": 77.79}) 
+    });
+    
 });
-

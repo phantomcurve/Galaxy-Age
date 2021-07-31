@@ -1,6 +1,7 @@
 export default class galacticAge {
-  constructor (earthAge) {
+  constructor (earthAge, lifeExpectancy) {
   this.earthAge = earthAge;
+  this.lifeExpectancy = lifeExpectancy;
   };
   mercuryAge(earthAge) {
     let mercuryAge = earthAge / 0.24;
