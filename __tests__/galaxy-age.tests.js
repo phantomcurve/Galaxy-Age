@@ -2,13 +2,12 @@ import galacticAge from '../src/js/galaxy-age';
 
 describe ('galacticAge', () => {
     test('should create an age object', () => {
-      const newAge = new galacticAge();
-      expect (newAge).toEqual(new galacticAge);
+      let earthAge = new galacticAge(36);
+      expect (earthAge).toEqual({"earthAge": 36});
     });
-
-    test('should convert newAge to Mercury years', () => {
-      let earthAge = 36
-      let mercuryAge = earthAge * 0.24;
+    test('should convert earthAge to Mercury years', () => {
+      let earthAge = new galacticAge();
+      let mercuryAge = earthAge.mercuryAge(36);
       expect (mercuryAge).toEqual(8.64);
     });
 });
