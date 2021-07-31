@@ -8,17 +8,22 @@ describe ('galacticAge', () => {
     test('should convert earthAge to Mercury years', () => {
       let earthAge = new galacticAge();
       let mercuryAge = earthAge.mercuryAge(36);
-      expect (mercuryAge).toEqual(8.64);
+      expect (mercuryAge).toEqual(150);
     });
     test('should convert earthAge to Venus years', () => {
       let earthAge = new galacticAge();
       let venusAge = earthAge.venusAge(36);
-      expect (venusAge).toEqual(22.32)
+      expect (venusAge).toEqual(58.06)
     });
     test('should convert earthAge to Mars years', () => {
       let earthAge = new galacticAge();
       let marsAge = earthAge.marsAge(36);
-      expect (marsAge).toEqual(67.68);
+      expect (marsAge).toEqual(19.15);
     });
+    test('should convert earthAge to Jupiter years', () => {
+      let earthAge = new galacticAge();
+      let jupiterAge = earthAge / 11.86;
+      expect (jupiterAge).toEqual(earthAge / 11.86);
+    })
 });
 
