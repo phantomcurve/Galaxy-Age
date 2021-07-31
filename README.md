@@ -23,7 +23,9 @@ This website allows the user to input their age and have it returned as the equi
 
 ## Tests/Specs
 
-
+Describe galacticAge()
+Test: "It will instantiate an earth age property to allow that to be acted upon by methods as needed"
+Expect: this.earthAge.toEqual(earthAge)
 
 ## How to download to view!
 
