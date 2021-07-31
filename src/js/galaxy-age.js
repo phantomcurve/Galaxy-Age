@@ -17,5 +17,10 @@ export default class galacticAge {
     let marsAgeRounded = Number.parseFloat(marsAge).toPrecision(4);
     return parseFloat(marsAgeRounded);
   };
+  jupiterAge(earthAge) {
+    let jupiterAge = earthAge / 11.86;
+    let jupiterAgeRounded = Number.parseFloat(jupiterAge).toPrecision(3);
+    return parseFloat(jupiterAgeRounded);
+  };
 
 }

@@ -22,8 +22,8 @@ describe ('galacticAge', () => {
     });
     test('should convert earthAge to Jupiter years', () => {
       let earthAge = new galacticAge();
-      let jupiterAge = earthAge / 11.86;
-      expect (jupiterAge).toEqual(earthAge / 11.86);
-    })
+      let jupiterAge = earthAge.jupiterAge(36);
+      expect (jupiterAge).toEqual(3.04);
+    });
 });
 
