@@ -17,8 +17,8 @@ describe ('galacticAge', () => {
     });
     test('should convert earthAge to Mars years', () => {
       let earthAge = new galacticAge();
-      let marsAge = earthAge * 1.88;
-      expect (marsAge).toEqual(earthAge * 1.88);
+      let marsAge = earthAge.marsAge(36);
+      expect (marsAge).toEqual(67.68);
     });
 });
 
