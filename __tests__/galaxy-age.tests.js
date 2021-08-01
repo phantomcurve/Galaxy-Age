@@ -39,10 +39,16 @@ describe ('galacticAge', () => {
       let mercuryYearsLeft = earthAge.mercuryYearsLeft();
       expect (mercuryYearsLeft).toEqual("You have 36.12 years left to live on this planet")
     });
-    test('should subtract Venus age from earth life expectancy–if greater than 0, return years lived beyond life expectancy', () => {
+    test('should subtract Venus age from earth life expectancy–if greater than 0, return years left to live before programmed death', () => {
       let earthAge = new galacticAge(36, 77.79);
       let venusAge = earthAge.venusAge();
       let venusYearsLeft = earthAge.lifeExpectancy - venusAge;
       expect (venusYearsLeft).toEqual(19.730000000000004)
+    });
+    test('should subtract Venus age from earth life expectancy–if less than 0, return years lived beyond life expectancy', () => {
+      let earthAge = new galacticAge(50, 77.79);
+      let venusAge = earthAge.venusAge();
+      let venusYearsLeft = Math.abs(earthAge.lifeExpectancy - venusAge);
+      expect (venusYearsLeft).toEqual(2.8599999999999994)
     });
 });
