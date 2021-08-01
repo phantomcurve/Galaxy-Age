@@ -26,11 +26,11 @@ This website allows the user to input their age and have it returned as the equi
 
 ## Tests/Specs
 
-Found in (__tests__) directory now!
+Found in __tests__ directory now!
 
 ## How to download to view!
 
-//Coming soon–UI not yet built!//
+### Coming soon–UI not yet built!
 
 Just click here, [yeah, right here!](https://github.com/phantomcurve/galaxyagequest)
 
