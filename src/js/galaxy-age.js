@@ -30,7 +30,7 @@ export default class galacticAge {
       if (mercuryYearsLeft <= 0) {
         result = "You have outlived your life expectancy by " + Math.abs(this.lifeExpectancy - this.mercuryAge()) + " years!";
       } else {
-        result = "You have "  + mercuryYearsLeft + " years left to live on this planet";
+        result = "You have "  + Number.parseFloat(mercuryYearsLeft).toPrecision(4) + " years left to live on this planet";
       }
       return result;
   };
