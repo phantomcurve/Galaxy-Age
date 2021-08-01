@@ -55,4 +55,10 @@ describe ('galacticAge', () => {
       let marsYearsLeft = earthAge.lifeExpectancy - marsAge;
       expect (marsYearsLeft).toEqual(58.64000000000001)
     });
+    test('should subtract Venus age from earth life expectancy–if less than 0, return years lived beyond life expectancy', () => {
+      let earthAge = new galacticAge(160, 77.79);
+      let marsAge = earthAge.marsAge();
+      let marsYearsLeft = Math.abs(earthAge.lifeExpectancy - marsAge);
+      expect (marsYearsLeft).toEqual(7.319999999999993)
+    });
 });
