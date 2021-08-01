@@ -65,4 +65,10 @@ describe ('galacticAge', () => {
       let jupiterYearsLeft = earthAge.lifeExpectancy - jupiterAge;
       expect (jupiterYearsLeft).toEqual(74.75)
     });
+    test('should subtract Jupiter age from earth life expectancy–if less than 0, return years lived beyond life expectancy', () => {
+      let earthAge = new galacticAge(1200, 77.79);
+      let jupiterAge = earthAge.jupiterAge();
+      let jupiterYearsLeft = Math.abs(earthAge.lifeExpectancy - jupiterAge);
+      expect (jupiterYearsLeft).toEqual(23.209999999999994)
+    });
 });
