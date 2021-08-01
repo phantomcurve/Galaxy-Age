@@ -59,4 +59,10 @@ describe ('galacticAge', () => {
       let marsYearsLeft = earthAge.marsYearsLeft();
       expect (marsYearsLeft).toEqual("You have outlived your life expectancy by 7.320 years!")
     });
+    test('should subtract Jupiter age from earth life expectancy–if greater than 0, return years left to live before programmed death', () => {
+      let earthAge = new galacticAge(36, 77.79);
+      let jupiterAge = earthAge.jupiterAge();
+      let jupiterYearsLeft = earthAge.lifeExpectancy - jupiterAge;
+      expect (jupiterYearsLeft).toEqual(74.75)
+    });
 });
