@@ -35,4 +35,15 @@ export default class galacticAge {
       return result;
   };
 
+  venusYearsLeft() {
+    let venusYearsLeft = this.lifeExpectancy - this.venusAge();
+    let result;
+      if (venusYearsLeft <= 0) {
+        result = "You have outlived your life expectancy by " + Number.parseFloat(Math.abs(this.lifeExpectancy - this.venusAge())).toPrecision(4) + " years!";
+      } else {
+        result = "You have "  + Number.parseFloat(venusYearsLeft).toPrecision(4) + " years left to live on this planet";
+      }
+      return result;
+  };
+
 }
