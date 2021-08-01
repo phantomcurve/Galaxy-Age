@@ -30,9 +30,11 @@ Found in (__tests__) directory now!
 
 ## How to download to view!
 
+//Coming soon–UI not yet built!//
+
 Just click here, [yeah, right here!](https://github.com/phantomcurve/galaxyagequest)
 
-OR you can do the following:
+Or, you can do the following:
 
 * Be alive
 * Learn to use computer
