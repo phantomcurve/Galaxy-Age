@@ -29,9 +29,9 @@ describe ('galacticAge', () => {
       let earthAge = new galacticAge(36, 77.79);
       expect (earthAge).toEqual({"earthAge": 36, "lifeExpectancy": 77.79}) 
     });
-    // test('should subtract Mercury years lived from earth years life expectancy to return Mercury years left', () => {
-    //   let earthAge = new galacticAge(36, 77.79);
-    //   let mercuryYearsLeft = this.lifeExpectancy % earthAge.mercuryAge();
-    //   expect (mercuryYearsLeft).toEqual(72.21) 
-    // });
+    test('should subtract Mercury years lived from earth years life expectancy to return Mercury years left', () => {
+      let earthAge = new galacticAge(36, 77.79);
+      let mercuryYearsLeft = earthAge.mercuryYearsLeft();
+      expect (mercuryYearsLeft).toEqual("You have outlived your life expectancy by 72.21 years!") 
+    });
 });
