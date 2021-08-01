@@ -46,4 +46,14 @@ export default class galacticAge {
       return result;
   };
 
+  marsYearsLeft() {
+    let marsYearsLeft = this.lifeExpectancy - this.marsAge();
+    let result;
+      if (marsYearsLeft <= 0) {
+        result = "You have outlived your life expectancy by " + Number.parseFloat(Math.abs(this.lifeExpectancy - this.marsAge())).toPrecision(4) + " years!";
+      } else {
+        result = "You have "  + Number.parseFloat(marsYearsLeft).toPrecision(4) + " years left to live on this planet";
+      }
+      return result;
+  };
 }
