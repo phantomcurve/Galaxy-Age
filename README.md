@@ -7,6 +7,9 @@
 ## Technologies Used
 
 * Webpack
+* Node
+* Jest
+* Babel
 * HTML
 * CSS
 * Markdown
@@ -23,9 +26,7 @@ This website allows the user to input their age and have it returned as the equi
 
 ## Tests/Specs
 
-Describe galacticAge()
-Test: "It will instantiate an earth age property to allow that to be acted upon by methods as needed"
-Expect: this.earthAge.toEqual(earthAge)
+Found in (__tests__) directory now!
 
 ## How to download to view!
 
@@ -47,6 +48,10 @@ OR you can do the following:
 
 ## How to download to edit
 
+#### Make sure you have Homebrew and Node running on your machine!
+If you do not, please see [this page](https://www.learnhowtoprogram.com/intermediate-javascript/getting-started-with-javascript/installing-node-js) for setup instructions:
+
+#### Otherwise
 * Navigate to https://github.com/phantomcurve/galaxyagequest
 * Click the green "Code" button
 * Select "Download ZIP"
