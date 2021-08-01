@@ -56,4 +56,15 @@ export default class galacticAge {
       }
       return result;
   };
+
+  jupiterYearsLeft() {
+    let jupiterYearsLeft = this.lifeExpectancy - this.jupiterAge();
+    let result;
+      if (jupiterYearsLeft <= 0) {
+        result = "You have outlived your life expectancy by " + Number.parseFloat(Math.abs(this.lifeExpectancy - this.jupiterAge())).toPrecision(4) + " years!";
+      } else {
+        result = "You have "  + Number.parseFloat(jupiterYearsLeft).toPrecision(4) + " years left to live on this planet";
+      }
+      return result;
+  };
 }

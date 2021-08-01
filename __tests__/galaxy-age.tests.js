@@ -61,14 +61,12 @@ describe ('galacticAge', () => {
     });
     test('should subtract Jupiter age from earth life expectancy–if greater than 0, return years left to live before programmed death', () => {
       let earthAge = new galacticAge(36, 77.79);
-      let jupiterAge = earthAge.jupiterAge();
-      let jupiterYearsLeft = earthAge.lifeExpectancy - jupiterAge;
-      expect (jupiterYearsLeft).toEqual(74.75)
+      let jupiterYearsLeft = earthAge.jupiterYearsLeft();
+      expect (jupiterYearsLeft).toEqual("You have 74.75 years left to live on this planet")
     });
     test('should subtract Jupiter age from earth life expectancy–if less than 0, return years lived beyond life expectancy', () => {
       let earthAge = new galacticAge(1200, 77.79);
-      let jupiterAge = earthAge.jupiterAge();
-      let jupiterYearsLeft = Math.abs(earthAge.lifeExpectancy - jupiterAge);
-      expect (jupiterYearsLeft).toEqual(23.209999999999994)
+      let jupiterYearsLeft = earthAge.jupiterYearsLeft();
+      expect (jupiterYearsLeft).toEqual("You have outlived your life expectancy by 23.21 years!")
     });
 });
