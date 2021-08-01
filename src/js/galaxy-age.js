@@ -3,25 +3,25 @@ export default class galacticAge {
   this.earthAge = earthAge;
   this.lifeExpectancy = lifeExpectancy;
   };
-  mercuryAge(earthAge) {
-    let mercuryAge = earthAge / 0.24;
-    let mercuryAgeRounded = Number.parseFloat(mercuryAge).toPrecision(4)
-    return parseFloat(mercuryAgeRounded);
+  mercuryAge() {
+    let mercuryAge = Number.parseFloat(this.earthAge / 0.24).toPrecision(4)
+    return parseFloat(mercuryAge);
   };
-  venusAge(earthAge) {
-    let venusAge = earthAge / 0.62;
-    let venusAgeRounded = Number.parseFloat(venusAge).toPrecision(4);
-    return parseFloat(venusAgeRounded);
+  venusAge() {
+    let venusAge = Number.parseFloat(this.earthAge / 0.62).toPrecision(4);
+    return parseFloat(venusAge);
   };
-  marsAge(earthAge) {
-    let marsAge = earthAge / 1.88;
-    let marsAgeRounded = Number.parseFloat(marsAge).toPrecision(4);
-    return parseFloat(marsAgeRounded);
+  marsAge() {
+    let marsAge = Number.parseFloat(this.earthAge / 1.88).toPrecision(4);
+    return parseFloat(marsAge);
   };
-  jupiterAge(earthAge) {
-    let jupiterAge = earthAge / 11.86;
-    let jupiterAgeRounded = Number.parseFloat(jupiterAge).toPrecision(3);
-    return parseFloat(jupiterAgeRounded);
+  jupiterAge() {
+    let jupiterAge = Number.parseFloat(this.earthAge / 11.86).toPrecision(3);
+    return parseFloat(jupiterAge);
   };
+  //mercuryYearsLeft(lifeExpectancy, mercuryAgeRounded) {
+   //let mercuryYearsLeft = Math.abs(lifeExpectancy - mercuryAgeRounded);
+    //return mercuryYearsLeft;
+  //};
 
 }
